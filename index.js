@@ -1,6 +1,7 @@
 const connectToMongo = require("./db.js");
 const express = require("express");
-// import {connectToMongo} from './db.js'
+
+//Mongo DB connection status
 connectToMongo();
 
 const app = express();
