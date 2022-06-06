@@ -9,7 +9,7 @@ router.get("/fetchallnotes", fetchUser, async (req, res) => {
   try {
     const userId = req.user.id;
     const notes = await Notes.find({ user: userId });
-    res.json([notes]);
+    res.json(notes);
   } catch (error) {
     res.status(500).send("internal server error occured");
     console.log(error.message);
